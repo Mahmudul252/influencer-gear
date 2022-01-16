@@ -1,0 +1,95 @@
+
+/* common properties */
+body, .influencer-image, .popular-collection, .image{
+    margin: 0;
+}
+
+/* Header */
+header .menu-bar{
+    display: block;
+}
+.none{
+    display: none;
+}
+
+header, main{
+    margin: 35px 16px 0 16px;
+}
+main{
+    margin-top: 22px;
+}
+/* First Container */
+.first-container{
+    flex-direction: column;
+    justify-content: center;
+}
+.influencer-header, .image{
+    order: 2;
+    text-align: center;
+}
+.influencer-header .influencer-info h1{
+    font-size: 28px;
+    margin: 0;
+}
+.influencer-header .influencer-info p{
+    font-size: 14px;
+}
+#camera-background{
+    width: 257px;
+    height: 257px;
+}
+#main-camera{
+    width: 202px;
+    height: 190px;
+    left: 25px;
+}
+.influencer-header .influencer-info a, .bonus .bonus-text a{
+    display: block;
+    margin-left: 20%;
+}
+.logos{
+    flex-wrap: wrap;
+    column-gap: 2px;
+    margin: 50px 10px;
+}
+.logos .logo img{
+    height: auto;
+    width: 70%;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(1, 330px);
+    justify-content: center;
+}
+.popular-collection>p{
+    text-align: right;
+    margin-right: 16px;
+    margin-left: 140px;
+    width: 200px;
+}
+
+/* Extra Section */
+.bonus{
+    flex-direction: column;
+}
+.bonus-text, .bonus-icon{
+    text-align: center;
+}
+
+.bonus .bonus-div{
+    flex-direction: column;
+    column-gap: 5%;
+}
+.bonus-icons div{
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.icon-text {
+    margin-top: 0;
+}
+
+
+.horizontal-line{
+    display: none;
+}

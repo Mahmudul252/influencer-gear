@@ -3,8 +3,10 @@
 /*------------------
 Common Properties
 ------------------- */
-body{
+*{
+    box-sizing: border-box !important;
     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 header, main{
     margin: 90px 120px 100px 120px;
@@ -18,30 +20,38 @@ header{
     justify-content: space-between;
     margin-bottom: 50px;
 }
-.top-heading{
-    margin: 0;
+.menu-bar{
+    display: none;
 }
 .menu-items{
     height: 36px;
+    text-align: right;
 }
 .menu-items nav a{
     text-decoration: none;
     color: black;
     margin-right: 34px;
 }
-.fas.fa-search{
+.fas.fa-search,.fas.fa-bars{
     width: 24px;
     height: 24px;
 }
 .fas.fa-shopping-cart{
     width: 36px;
     height: 36px;
+
+}
+#shopping-cart{
+    margin-right: 0;
 }
 /* First Container */
 .first-container{
     display: flex;
     align-items: center;
     margin-bottom: 70px;
+}
+.influencer-header{
+    width: 100%;
 }
 .influencer-header .influencer-info h1{
     font-size: 52px;
@@ -53,8 +63,8 @@ header{
 .button{
     display: flex;
     align-items: center;
-    width: 148px;
-    height: 24px;
+    width: 196px;
+    height: 44px;
     background-color: #E02C6D;
     border-radius: 41px;    
     padding: 10px 24px;
@@ -79,14 +89,26 @@ header{
 }
 .influencer-image img{
     width: 475px;
-height: 475px;
+    height: 475px;
 }
 #main-camera{
     position: absolute;
     left: 0;
     top: 30px;
     width: 440px;
-height: 414px;
+    height: 414px;
+}
+#main-camera:hover{
+    transition: 1s;
+    transform: rotate(360deg);
+}
+
+/* Horizontal Line  */
+.horizontal-line{
+    height: 1px;
+    width: 66em;
+    margin: 25px auto;
+    background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0.02, white),color-stop(0.5, gray), color-stop(0.98, white));
 }
 
 /* Logo Section  */
@@ -100,7 +122,6 @@ height: 414px;
 /* Popular Collection */
 .popular-collection{
     margin: 100px 30px;
-    width: 990px;
 }
 .collection-heading{
     text-align: center;
@@ -109,14 +130,14 @@ height: 414px;
 }
 .products{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 330px);
+    justify-content: center;
     column-gap: 30px;
     row-gap: 30px;
 }
 .product{
     background-color: #FFFFFF;
     padding: 17px 15px;
-    width: 300px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
 }
@@ -145,12 +166,36 @@ height: 414px;
     width: 300px;
     height: 256px;
 }
-.popular-collection p{
-    color: rgba(224, 44, 109, 0.87);
-    text-align: right;
-    margin-right: -50px;
+.popular-collection>p{
+    text-align: center;
+    margin-left: 930px;
 }
-
+.popular-collection p a{
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+}
+/* bonus section  */
+.bonus .bonus-div{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5%;
+}
+.bonus-icons a{
+    text-decoration: none;
+    color: black;
+}
+.icon-text{
+    font-size: 18px;
+}
+.fas.bottom-icon{
+    font-size: 40px;
+}
+.bonus-icons div{
+    display: grid;
+    grid-template-columns: 25% auto;
+    align-items: center;
+    justify-content: space-around;
+}
 /* footer section */
 footer{
     position: absolute;
@@ -172,17 +217,16 @@ footer p{
     margin-bottom: 0;
 }
 footer .icons{
-    
+
     margin-top: 17px;
     margin-bottom: 50px;
 }
 .icons .fab{
     padding-top: 8px;
     width: 32px;
-    height: 24px;
+    height: 32px;
     border-radius: 16px;
     background-color: #22213C;
     margin-right: 10px;
     margin-left: 6px;
-
 }

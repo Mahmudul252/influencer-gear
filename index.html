@@ -9,23 +9,27 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/89d7c52978.js" crossorigin="anonymous"></script>
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" media="only screen and (max-width: 688px)" href="styles/mobile-devices.css">
+    <link rel="stylesheet" media="only screen and (min-width: 689px) and (max-width: 991px)"
+        href="styles/tablet-devices.css">
 </head>
 
 <body>
     <!-- Header Starts -->
     <header>
+        <i class="fas fa-bars menu-bar"></i>
         <div>
             <h3 class="top-heading">Influencer products</h3>
         </div>
         <div class="menu-items">
             <nav>
-                <a href="">Home</a>
-                <a href="">Products</a>
-                <a href="">Sign up</a>
-                <a href="">Log in</a>
-                <a href=""><i class="fas fa-search"></i></a>
-                <a href=""><i class="fas fa-shopping-cart" id="shopping-cart"></i></a>
+                <a href="" class="none">Home</a>
+                <a href="" class="none">Products</a>
+                <a href="" class="none">Sign up</a>
+                <a href="" class="none">Log in</a>
+                <a href="" class="none"><i class="fas fa-search"></i></a>
+                <a href="" id="shopping-cart"><i class="fas fa-shopping-cart"></i></a>
             </nav>
         </div>
     </header>
@@ -39,38 +43,36 @@
                         and creative strategy to produce meaningful relationships</p>
                     <a href="">
                         <div class="button">
-
                             <p>Preebook now <i class="fas fa-arrow-right"></i></p>
-
                         </div>
                     </a>
                 </div>
             </div>
             <div class="influencer-image">
-                <img src="/images/images/Circle design.svg" alt="">
-                <img src="/images/images/main-camera.png" alt="" id="main-camera">
+                <img src="images/images/Circle design.svg" alt="" id="camera-background">
+                <img src="images/images/main-camera.png" alt="" id="main-camera">
             </div>
         </section>
 
         <!-- Logo Section -->
-        <hr>
+        <div class="horizontal-line"></div>
         <section class="logos">
-            <div class="logo"><img src="/images/logos/Alibaba.svg" alt=""></div>
-            <div class="logo"><img src="/images/logos/Amazon.svg" alt=""></div>
-            <div class="logo"><img src="/images/logos/Daraz.pk Logo.svg" alt=""></div>
-            <div class="logo"><img src="/images/logos/Ebay.svg" alt=""></div>
-            <div class="logo"><img src="/images/logos/Rakuten.svg" alt=""></div>
-            <div class="logo"><img src="/images/logos/Walmart.svg" alt=""></div>
-            <div class="logo"><img src="/images/logos/Target.svg" alt=""></div>
+            <div class="logo"><img src="images/logos/Alibaba.svg" alt=""></div>
+            <div class="logo"><img src="images/logos/Amazon.svg" alt=""></div>
+            <div class="logo"><img src="images/logos/Daraz.pk Logo.svg" alt=""></div>
+            <div class="logo"><img src="images/logos/Ebay.svg" alt=""></div>
+            <div class="logo"><img src="images/logos/Rakuten.svg" alt=""></div>
+            <div class="logo"><img src="images/logos/Walmart.svg" alt=""></div>
+            <div class="logo"><img src="images/logos/Target.svg" alt=""></div>
         </section>
-        <hr>
+        <div class="horizontal-line"></div>
 
         <!-- Popular Collection -->
         <section class="popular-collection">
             <h2 class="collection-heading">Popular Collection</h2>
             <div class="products">
                 <div class="product">
-                    <img src="/images/images/tripod.png" alt="">
+                    <img src="images/images/tripod.png" alt="">
                     <h3>Flex Tripod</h3>
                     <p class="price">$50.08</p>
                     <p class="rating">
@@ -84,7 +86,7 @@
                     <p class="product-info">Good Quality Tripod. Worldwide Shipping</p>
                 </div>
                 <div class="product">
-                    <img src="/images/images/mic.png" alt="">
+                    <img src="images/images/mic.png" alt="">
                     <h3>Microphone</h3>
                     <p class="price">$120.25</p>
                     <p class="rating">
@@ -98,7 +100,7 @@
                     <p class="product-info">High definition audio receiving capability. Worldwide Shipping</p>
                 </div>
                 <div class="product">
-                    <img src="/images/images/airpod.png" alt="">
+                    <img src="images/images/airpod.png" alt="">
                     <h3>Airbuds</h3>
                     <p class="price">$100.00</p>
                     <p class="rating">
@@ -112,7 +114,7 @@
                     <p class="product-info">Smooth music. Better quality. Worldwide Shipping</p>
                 </div>
                 <div class="product">
-                    <img src="/images/images/drone.png" alt="">
+                    <img src="images/images/drone.png" alt="">
                     <h3>Drone</h3>
                     <p class="price">$980.25</p>
                     <p class="rating">
@@ -126,7 +128,7 @@
                     <p class="product-info">High quality Drone. 300 meter flying record. Worldwide Shipping</p>
                 </div>
                 <div class="product">
-                    <img src="/images/images/lights.png" alt="">
+                    <img src="images/images/lights.png" alt="">
                     <h3>Light Setup</h3>
                     <p class="price">$1200.00</p>
                     <p class="rating">
@@ -140,7 +142,7 @@
                     <p class="product-info">Can be setup in any place. Worldwide Shipping</p>
                 </div>
                 <div class="product">
-                    <img src="/images/images/setup.png" alt="">
+                    <img src="images/images/setup.png" alt="">
                     <h3>Photoshoot Set</h3>
                     <p class="price">$820.40</p>
                     <p class="rating">
@@ -154,7 +156,7 @@
                     <p class="product-info">Nice quality. Worldwide Shipping</p>
                 </div>
                 <div class="product">
-                    <img src="/images/images/camera.png" alt="">
+                    <img src="images/images/camera.png" alt="">
                     <h3>Vlogging Camera</h3>
                     <p class="price">$1800.80</p>
                     <p class="rating">
@@ -168,7 +170,7 @@
                     <p class="product-info">Wide Range. Multy unit recording. Worldwide Shipping</p>
                 </div>
                 <div class="product">
-                    <img src="/images/images/single-light.png" alt="">
+                    <img src="images/images/single-light.png" alt="">
                     <h3>Green Screen</h3>
                     <p class="price">$25.48</p>
                     <p class="rating">
@@ -181,8 +183,8 @@
                     </p>
                     <p class="product-info">Nice screen for background. Worldwide Shipping</p>
                 </div>
-                <div class="product">
-                    <img src="/images/images/action.png" alt="">
+                <div class="product" id="action-camera">
+                    <img src="images/images/action.png" alt="">
                     <h3>Action Camera</h3>
                     <p class="price">$380.00</p>
                     <p class="rating">
@@ -196,13 +198,53 @@
                     <p class="product-info">Waterproof high quality camera. Worldwide Shipping</p>
                 </div>
             </div>
-            <p>See More <i class="fas fa-arrow-right"></i></p>
+            <p><a href="">See More <i class="fas fa-arrow-right"></i></a></p>
+        </section>
+
+        <!-- Extra Section  -->
+        <div class="horizontal-line"></div>
+        <section class="bonus">
+            <div class="bonus-div">
+                <div class="bonus-icons">
+                    <a href="">
+                        <div>
+                            <p class="bonus-icon"><i class="fas fa-people-carry bottom-icon"></i></p>
+                            <p class="icon-text">Quick and Easy Store Pickup</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="bonus-icons">
+                    <a href="">
+                        <div>
+                            <p class="bonus-icon"><i class="fas fa-shipping-fast bottom-icon"></i></p>
+                            <p class="icon-text">Free shipping over $35</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="bonus-icons">
+                    <a href="">
+                        <div>
+                            <p class="bonus-icon"><i class="fas fa-dollar-sign bottom-icon"></i></p>
+                            <p class="icon-text">Low Price Guarantee</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="bonus-icons">
+                    <a href="">
+                        <div>
+                            <p class="bonus-icon"><i class="fas fa-camera-retro bottom-icon"></i></p>
+                            <p class="icon-text">Latest and Greatest Tech</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
+
     <!-- Footer -->
     <footer>
         <p class="footer-heading">Influencer products</p>
-        <p>Copyright © 2020 influencer products</p>
+        <p>Copyright &copy; 2020 influencer products</p>
         <p>All rights reserved</p>
         <p class="icons">
             <i class="fab fa-instagram"></i>
